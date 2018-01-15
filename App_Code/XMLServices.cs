@@ -18,16 +18,16 @@ public class XMLServices
         //
     }
 
-    public List<Product> getProducts()
+    public List<Product> getProducts(string path)
     {
-        String xmlFile = "ProductsDB.xml";
+        String xmlFile = path +  "/ProductsDB.xml";
 
         // Define a settings which will be used by the reader 
         XmlReaderSettings xmlSettings = new XmlReaderSettings();
         xmlSettings.IgnoreWhitespace = true;
         xmlSettings.IgnoreComments = true;
 
-      //  int TeamMemberCount = 0;
+        //  int TeamMemberCount = 0;
 
         List<Product> lp = new List<Product>();
 
@@ -39,14 +39,14 @@ public class XMLServices
             {
                 if (XmlRdr.NodeType == XmlNodeType.Element && XmlRdr.LocalName == "Item")
                 {
-                   
-                        Product p = new Product(int.Parse(XmlRdr.GetAttribute(0)), XmlRdr.GetAttribute(1), double.Parse(XmlRdr.GetAttribute(2)), int.Parse(XmlRdr.GetAttribute(3)), XmlRdr.GetAttribute(4),Convert.ToBoolean(int.Parse(XmlRdr.GetAttribute(5))));
+
+                    Product p = new Product(int.Parse(XmlRdr.GetAttribute(0)), XmlRdr.GetAttribute(1), double.Parse(XmlRdr.GetAttribute(2)), int.Parse(XmlRdr.GetAttribute(3)), XmlRdr.GetAttribute(4), Convert.ToBoolean(int.Parse(XmlRdr.GetAttribute(5))));
                     lp.Add(p);
                 }
             }
         }
         return lp;
 
-       // Response.Write(String.Format("There are {0} team members in the department", TeamMemberCount.ToString()));
+        // Response.Write(String.Format("There are {0} team members in the department", TeamMemberCount.ToString()));
     }
 }

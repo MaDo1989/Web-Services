@@ -15,9 +15,9 @@ public class Product
         //
     }
 
-    public List<Product> getProducts()
+    public List<Product> getProducts(string path)
     {
-        return xml.getProducts();
+        return xml.getProducts(path);
     }
 
     public Product(int _productID, string _title, double _price, int _inventory, string _imgPath, bool _avail)

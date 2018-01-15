@@ -25,7 +25,9 @@ public class WebService : System.Web.Services.WebService
     public List<Product> getProducts()
     {
         Product p = new Product();
-        return p.getProducts();
+        return p.getProducts(Server.MapPath("."));
+
+      //  Server.MapPath(".") + "ProductsDB.xml"
     }
 
 }
