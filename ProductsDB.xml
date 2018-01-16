@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Products>
-  <Item id="1" title="Porsche911ES" price="1000000" inventory="5" image="https://s.aolcdn.com/commerce/autodata/images/USC70PRC011A021001.jpg" available="1"></Item>
-  <Item id="1" title="PorscheCayanneES" price="1500000" inventory="7" image="https://files.porsche.com/filestore/image/multimedia/none/jdp-2016-9pa-e2-2nd-tu-modelimage-sideshot/thumbwhite/e724a2b3-970d-11e6-9f1b-0019999cd470/porsche-thumbwhite.jpg" available="1"></Item>
-  <Item id="1" title="PorscheBoxterES" price="900000" inventory="3" image="https://files.porsche.com/filestore/image/multimedia/none/jdp-2016-982-718-bo-modelimage-sideshot/model/ceff0653-946b-11e6-9f1b-0019999cd470/porsche-model.png" available="1"></Item>
+  <Item id="9" title="Porsche911ES" price="1000000" inventory="5" image="https://s.aolcdn.com/commerce/autodata/images/USC70PRC011A021001.jpg" available="1"></Item>
+  <Item id="10" title="PorscheCayanneES" price="1500000" inventory="7" image="https://files.porsche.com/filestore/image/multimedia/none/jdp-2016-9pa-e2-2nd-tu-modelimage-sideshot/thumbwhite/e724a2b3-970d-11e6-9f1b-0019999cd470/porsche-thumbwhite.jpg" available="1"></Item>
+  <Item id="11" title="PorscheBoxterES" price="900000" inventory="3" image="https://files.porsche.com/filestore/image/multimedia/none/jdp-2016-982-718-bo-modelimage-sideshot/model/ceff0653-946b-11e6-9f1b-0019999cd470/porsche-model.png" available="1"></Item>
 
 </Products>
 

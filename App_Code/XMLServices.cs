@@ -40,7 +40,15 @@ public class XMLServices
                 if (XmlRdr.NodeType == XmlNodeType.Element && XmlRdr.LocalName == "Item")
                 {
 
-                    Product p = new Product(int.Parse(XmlRdr.GetAttribute(0)), XmlRdr.GetAttribute(1), double.Parse(XmlRdr.GetAttribute(2)), int.Parse(XmlRdr.GetAttribute(3)), XmlRdr.GetAttribute(4), Convert.ToBoolean(int.Parse(XmlRdr.GetAttribute(5))));
+                   // Product p = new Product(int.Parse(XmlRdr.GetAttribute(0)),XmlRdr.GetAttribute(1), double.Parse(XmlRdr.GetAttribute(2)), int.Parse(XmlRdr.GetAttribute(3)), XmlRdr.GetAttribute(4), Convert.ToBoolean(int.Parse(XmlRdr.GetAttribute(5))));
+                    Product p = new Product();
+                    p.Id = int.Parse(XmlRdr.GetAttribute(0));
+                    p.Title = XmlRdr.GetAttribute(1);
+                    p.Price = double.Parse(XmlRdr.GetAttribute(2));
+                    p.Inventory = int.Parse(XmlRdr.GetAttribute(3));
+                    p.ImagePath = XmlRdr.GetAttribute(4);
+                    p.Available = Convert.ToBoolean(int.Parse(XmlRdr.GetAttribute(5)));
+                    p.category.Id = int.Parse(XmlRdr.GetAttribute(6));
                     lp.Add(p);
                 }
             }

@@ -128,7 +128,7 @@ public class Product
     //    db.insertSale(id, price, inventory, userName, date, paymentMethod);
     //}
 
-    //public Category category = new Category();
+    public Category category = new Category();
 
     //private Dictionary<string, string> attributes;
 
